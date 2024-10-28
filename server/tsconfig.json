@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleDetection": "force",
+        "moduleResolution": "Bundler",
+        "strict": true,
+        "noImplicitAny": true,
+        "noEmit": true,
+        "verbatimModuleSyntax": false,
+        "allowImportingTsExtensions": true,
+        "esModuleInterop": true,
+        "noFallthroughCasesInSwitch": true,
+        "skipLibCheck": true,
+        "types": ["node", "jest"],
+        "jsx": "react-jsx",
+        "resolveJsonModule": true,
+        "jsxImportSource": "hono/jsx",
+        "baseUrl": ".",
+        "paths": {
+            "~/*": ["*"]
+        }
+    },
+    "include": ["src/**/*.ts", "test/**/*.ts", "__tests__/**/*.ts"],
+    "exclude": ["node_modules"]
+}

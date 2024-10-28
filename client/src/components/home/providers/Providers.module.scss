@@ -1,0 +1,24 @@
+@use "~/styles/variables.scss" as vars;
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    width: 250px;
+    background-color: white;
+    overflow: auto;
+    border: solid 1px vars.$obie-grey;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.value {
+    display: flex;
+    font-size: 18px;
+}

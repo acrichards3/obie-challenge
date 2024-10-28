@@ -1,0 +1,33 @@
+@use "~/styles/variables.scss" as vars;
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    gap: 20px;
+    max-width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    padding: 40px;
+    background-color: vars.$obie-purple;
+    box-shadow: vars.$obie-shadow;
+    transition: 200ms;
+}
+
+.header {
+    text-align: center;
+    color: white;
+}
+
+.children {
+    display: flex;
+    flex: 1;
+    overflow: auto;
+}
+
+@media (max-width: 768px) {
+    .card {
+        padding: 20px;
+    }
+}

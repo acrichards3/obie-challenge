@@ -1,0 +1,33 @@
+@use "~/styles/variables.scss" as vars;
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: vars.$obie-background;
+    padding: 20px;
+    gap: 40px;
+    flex: 1;
+}
+
+.header {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    width: 100px;
+    object-fit: contain;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        justify-content: center;
+    }
+}
